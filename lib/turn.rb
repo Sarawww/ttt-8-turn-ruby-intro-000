@@ -9,6 +9,11 @@ def display_board (board)
    puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+def input_to_index(user_input)
+  user_input.to_i - 1
+end
+
+
 def valid_move?
   if index.between?(0,8) 
     if board[index] != "X" &&  board[index] != "O"
